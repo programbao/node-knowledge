@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>socket.io</title>
+  <script src="socket.io.js"></script>
+</head>
+<body>
+  <!-- <h1>gp6 交流区</h1>
+  <div id="content" name='name' style="overflow-y: scroll; width: 400px; height: 300px; border: 5px solid red;"></div>
+  <br />
+  <div>
+    <input type="text" id="msg" style="width: 200px;">
+  </div>
+  <button id="sumbit">提交</button> -->
+  <script>
+    const socket = io.connect('http://localhost:8081')
+    socket.on('hehe',(msg) => {
+      console.log('hehe'+ msg)
+    })
+    socket.emit('haha', '我来了')
+  </script>
+</body>
+</html>

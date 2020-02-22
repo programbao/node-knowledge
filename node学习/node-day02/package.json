@@ -1,0 +1,16 @@
+{
+  "name": "node-day02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "1.内置模块.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "nodemailer": "^6.4.2"
+  }
+}
